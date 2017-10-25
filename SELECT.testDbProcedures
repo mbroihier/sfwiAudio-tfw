@@ -1,0 +1,2 @@
+SELECT-0010
+/step From the main menu, select the first podcast in the list.\step /step Verify a play menu is displayed with a progress bar and a pause button.\step /step Verify that the audio matches the podcast selected.\step 

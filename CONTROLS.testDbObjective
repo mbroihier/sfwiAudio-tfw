@@ -1,0 +1,6 @@
+CONTROLS-0010:SFWIAUDIO-PR-PAUSE-010
+During this test case, the pause if pressed to confirm that the app will pause audio that is playing.
+CONTROLS-0020:SFWIAUDIO-PR-RESUME-010, SFWIAUDIO-PR-PAUSE-010
+When the resume button is pressed, audio will resume from the point at which it was paused.
+CONTROLS-0030:SFWIAUDIO-PR-SLIDER-010
+By sliding the slider, this test case illustrates that the playing position can be moved forward and backward in time.

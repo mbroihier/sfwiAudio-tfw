@@ -1,0 +1,4 @@
+FINISH-0010
+When the podcast completes, control will return to the main menu.
+FINISH-0020
+Pressing the back kill terminates the play of the audio currently in progress and treats this the same as playing the podcast to the end.  That is, if it is selected again, play starts at the beginning.

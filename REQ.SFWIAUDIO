@@ -1,0 +1,30 @@
+SFWIAUDIO-EXT-IF-010
+sfwiAudio shall display and play only podcasts that are in the podcast directory.
+SFWIAUDIO-EXT-IF-020
+sfwiAudio shall have a main menu that displays a list of podcasts available for play.
+SFWIAUDIO-EXT-IF-030
+sfwiAudio shall have a sub menu that has a pause button and a slider bar that allows for the pausing and resumption of the podcast and adjustment of the playback position.
+SFWIAUDIO-PR-INIT-010
+When the app is started by selecting from the Android app selection menu, the app shall do the following:
+SFWIAUDIO-PR-INIT-010.001
+If there are no podcasts in the directory, the app shall display a message stating that the device is empty. 
+SFWIAUDIO-PR-INIT-010.002
+If podcasts do exist in the directory, the app shall display a list of the podcasts that can be played.
+SFWIAUDIO-PR-SELECT-010
+When a podcast is selected by pressing a list entry, a new menu will be displayed presenting a pause button and slider, and the podcast will begin playing.
+SFWIAUDIO-PR-FINISHED-010
+When the podcast completes, the menu will revert to the main/initial menu.
+SFWIAUDIO-PR-FINISHED-020
+A podcast shall be “completed” if the user presses the “back” navigation control returning to the main menu.
+SFWIAUDIO-PR-PAUSE-010
+ When the user presses the pause button, the audio shall be paused and the button label shall be modified to resume.
+SFWIAUDIO-PR-RESUME-010
+ When the user presses the resume button, the audio shall be resumed from the paused location and the button label shall be changed to pause.
+SFWIAUDIO-PR-SLIDER-010
+ When the user slides the slider, the audio playback position shall be adjusted accordingly and audio shall play from that adjusted position.
+SFWIAUDIO-PROV-010
+  The app shall require no special provisioning however the podcast settings may be required to be adjusted by the Android OS.
+SFWIAUDIO-PERF-010
+  The app shall be able to display as many podcasts as there are in the directory.
+SFWIAUDIO-PERF-020
+  The app shall play the podcast a normal speed.

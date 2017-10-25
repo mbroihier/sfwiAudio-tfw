@@ -1,0 +1,4 @@
+STARTUP-0010
+/step Start the application.\step /step Verify that a warning message is displayed and record the message in the test log.\step 
+STARTUP-0020
+/step Start the application.\step /step Verify a list of podcasts are displayed that match the contents of the podcast directory.\step 

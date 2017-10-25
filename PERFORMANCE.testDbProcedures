@@ -1,0 +1,4 @@
+PERFORMANCE-0010
+/step Install 5 podcasts into the podcast directory of the phone.\step /step Start the app.\step /step Verify that five podcasts are shown in the main menu list.\step /step Select the first podcast in the list.\step /step Verify the podcast plays and it is the correct one.\step /step Press the back key.\step /step Verify the podcast terminates and that the main menu is presented.\step /step Select the next podcast and repeat the above procedure verifying that all podcasts are playable.\step 
+PERFORMANCE-0020
+/step Repeat PERFORMANCE-0010 with 10 podcasts.\step /step Repeat PERFORMANCE-0010 with 20 podcasts.\step 

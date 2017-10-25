@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+FINISH-0020</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Pressing back while podcast is playing, terminates play</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>A podcast shall be &quot;completed&quot; if the user presses the &quot;back&quot; navigation control returning to the main menu.</li></ul>
+<p>This test case demonstrates that while playing a podcast, if a user presses the back, the podcast is terminated and it will be treated as though the podcast has completed.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Install the app into an Android phone</li><li>Install podcasts into the podcast directory</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> From the main menu, select a podcast. </li><li> Confirm the podcast begins playing and the play menu is displayed. </li><li> Press the back button. </li><li> Verify the audio play stops. </li><li> Select the same podcast. </li><li> Verify that the podcast restarts play at the beginning of the audio.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+Pressing the back kill terminates the play of the audio currently in progress and treats this the same as playing the podcast to the end.  That is, if it is selected again, play starts at the beginning.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+UNTESTED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li>Unnecessary</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+SFWIAUDIO-PR-FINISHED-020</td>
+</tr>
+</table>
+</body>
+</html>

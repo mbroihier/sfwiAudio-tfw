@@ -1,0 +1,4 @@
+PERFORMANCE-0010:SFWIAUDIO-PERF-010, SFWIAUDIO-PERF-020
+When the user starts the app, all of the podcasts in the podcast directory of the phone should be displayed and they should be available to play.  This test case illustrates that and verifies that the audio sounds normal.
+PERFORMANCE-0020:SFWIAUDIO-PERF-010, SFWIAUDIO-PERF-020
+This test repeats PERFORMANCE-0010 but with more podcasts.

@@ -1,0 +1,6 @@
+CONTROLS-0010
+Pressing the pause button will pause audio and pressing it again will resume audio.
+CONTROLS-0020
+Audio will resume playing when resume is pressed.  The audio will resume from the position it was stopped at.
+CONTROLS-0030
+Slider movement changes where the audio resumes play.

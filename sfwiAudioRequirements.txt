@@ -1,0 +1,102 @@
+﻿
+
+
+
+
+
+Stop Fiddling With It Audio Requirements
+Automated Testing Framework Example
+
+
+
+
+Mark Broihier
+February 06, 2017
+
+
+
+
+
+
+Table of Contents
+ 1 Introduction	3
+ 1.1 Scope	3
+ 1.2 Features	3
+ 1.3 Acronyms	3
+ 2 General Overview	3
+ 3 sfwiAudio	3
+ 3.1 Theory of Operation	3
+ 3.2 External Interface Requirements	4
+ 3.3 Processing Requirements	4
+ 3.3.1 Startup	4
+ 3.3.2 Selecting a Podcast	4
+ 3.3.3 Podcast Finishes	4
+ 3.3.4 Podcast Play Menu/Controls	5
+ 3.4 Provisioning Requirements	5
+ 3.5 Performance Requirements	5
+
+ 1  Introduction
+The purpose of this document is to define the requirements for an Android app that will allow a user to play back podcasts that the user has placed in the podcast directory of his or her phone.
+
+ 1.1  Scope
+This document defines the interface, processing, and displays for an Android app that is intended to work on Android versions greater than or equal to 4.4.2.  The purpose of this app is mostly to develop an application for my personal use.  This application is intended to do one thing very well and use a minimum number of Android system features so that it is likely to require less updates as Android changes.
+
+ 1.2  Features
+The Stop Fiddling With It Audio (sfwiAudio) application will be a dual menu Android app that has a user interface to select a podcast to play and a second menu to pause, resume, and alter the “position” of the playback.  
+
+ 1.3  Acronyms
+
+
+ 2  General Overview
+The “Stop Fiddling With It (SFWI/sfwi)” series of apps that I'm creating are intended to simplify my personal world by handcrafting my own simple apps.  The major reason this particular app is being written is because most podcast players available do way too much.  I don't care about play lists, integrated access to a “store”, or display of art available for the piece being played.  These features fail too often and the user interface is frequently changing.  With automatic updating of apps now very common, there is no way to avoid the user interface changes.  Once I finish with this app, I'm not intending to update it unless OS changes affect operation.  
+ 3  sfwiAudio
+The following paragraphs outline the operation of sfwiAudio and the detailed requirements that define the expected behavior of the app.
+ 3.1  Theory of Operation
+When sfwiAudio is selected to run from an Android main menu, it will read the device's podcast directory and list the podcasts available for play.  When a podcast is selected, a second menu will be presented that allows the user to pause and resume playing of the podcast and a slider will be provided to adjust the position of the playback.
+
+The audio will be allowed to be played in background and with the display off lowering the power requirements on the device.
+
+If the user presses the back key, however, the podcast replay will be terminated and the list of podcasts in the directory will again be presented.
+
+When the play terminates, the display will return to the podcast list.
+
+ 3.2  External Interface Requirements
+ID::SFWIAUDIO-EXT-IF-010 sfwiAudio shall display and play only podcasts that are in the podcast directory.
+
+ID::SFWIAUDIO-EXT-IF-020 sfwiAudio shall have a main menu that displays a list of podcasts available for play.
+
+ID::SFWIAUDIO-EXT-IF-030 sfwiAudio shall have a sub menu that has a pause button and a slider bar that allows for the pausing and resumption of the podcast and adjustment of the playback position.
+
+ 3.3  Processing Requirements
+The following paragraphs identify the processing to be performed at initiation of the app and with each button press or screen touch.
+
+ 3.3.1  Startup
+ID::SFWIAUDIO-PR-INIT-010 When the app is started by selecting from the Android app selection menu, the app shall do the following:
+
+ID::SFWIAUDIO-PR-INIT-010.001 If there are no podcasts in the directory, the app shall display a message stating that the device is empty. 
+
+ID::SFWIAUDIO-PR-INIT-010.002 If podcasts do exist in the directory, the app shall display a list of the podcasts that can be played.
+
+ 3.3.2  Selecting a Podcast
+ID::SFWIAUDIO-PR-SELECT-010 When a podcast is selected by pressing a list entry, a new menu will be displayed presenting a pause button and slider, and the podcast will begin playing.
+
+ 3.3.3  Podcast Finishes
+ID::SFWIAUDIO-PR-FINISHED-010 When the podcast completes, the menu will revert to the main/initial menu.
+
+ID::SFWIAUDIO-PR-FINISHED-020 A podcast shall be “completed” if the user presses the “back” navigation control returning to the main menu.
+ 3.3.4  Podcast Play Menu/Controls
+ID::SFWIAUDIO-PR-PAUSE-010  When the user presses the pause button, the audio shall be paused and the button label shall be modified to resume.
+
+ID::SFWIAUDIO-PR-RESUME-010  When the user presses the resume button, the audio shall be resumed from the paused location and the button label shall be changed to pause.
+
+ID::SFWIAUDIO-PR-SLIDER-010  When the user slides the slider, the audio playback position shall be adjusted accordingly and audio shall play from that adjusted position.
+
+
+ 3.4  Provisioning Requirements
+ID::SFWIAUDIO-PROV-010   The app shall require no special provisioning however the podcast settings may be required to be adjusted by the Android OS.
+
+ 3.5  Performance Requirements
+ID::SFWIAUDIO-PERF-010   The app shall be able to display as many podcasts as there are in the directory.
+
+ID::SFWIAUDIO-PERF-020   The app shall play the podcast a normal speed.
+

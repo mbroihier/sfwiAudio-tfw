@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+CONTROLS-0030</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Slider changes audio position</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>When the user slides the slider, the audio playback position shall be adjusted accordingly and audio shall play from that adjusted position.</li></ul>
+<p>By sliding the slider, this test case illustrates that the playing position can be moved forward and backward in time.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Application installed on an Android phone</li><li>Podcasts are in the phone's podcast directory</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Start the application. </li><li> Select a podcast to play. </li><li> On the new menu displayed, move the slider forward. </li><li> Verify that the audio appears to play from a different position. </li><li> Move the slider to the beginning. </li><li> Verify that the audio is what was played when the podcast was initially selected. </li><li> Let the podcast play for a while and note the position of the slider's farthest advance. </li><li> Move the slider back in time. </li><li> Verify that the audio presented has been played before. </li><li> Move the slider a bit ahead (but not ahead of the noted position). </li><li> Verify that the audio has been played.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+Slider movement changes where the audio resumes play.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+UNTESTED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li>Unnecessary</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+SFWIAUDIO-PR-SLIDER-010</td>
+</tr>
+</table>
+</body>
+</html>
