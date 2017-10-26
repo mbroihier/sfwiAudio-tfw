@@ -6,3 +6,48 @@ ID:EXPECTED PROGRESS
 10/30/2017 9
 10/31/2017 9
 11/08/2017 10
+ID:STARTUP-0020
+Test Start Time: 10/26/2017 12:50 CDT
+Log data:
+Test started on Nexus 6P running Android 7.1.2.  Using Android File Transfer program looked at Podcasts directory and saw 01 #628_In the Shadow of the City 2017.mp3 and 01 The Moth Radio Hour_Me, Myself, and I_Stories of Questioned Identity.mp3.
+
+Saw the same thing on Nexus.
+
+Results: PASSED
+Test End Time: 10/26/2017 12:55 CDT
+Tester: Mark Broihier
+ID:SELECT-001
+Test Start Time: 10/26/2017 12:57 CDT
+Log data:
+Using the same test setup as STARTUP-0020 test that was run previous to this test case.  I selected, the first podcast labeled 01 #628_In the Shadow of the City 2017.mp3.  Title on the sub menu says it is playing the correct podcast.  Audio sounds right with the title.  There is a progress bar and there is a PAUSE button.
+Results: PASSED
+Test End Time: 10/26/2017 13:01 CDT
+Tester: Mark Broihier
+ID:FINISH-0020
+Test Start Time: 10/26/2017 13:02 CDT
+Log data:
+Continuing from test case SELECT-0010 with the same phone and podcast list I executed this test case.  Steps 1 & 2 were completed in test case SELECT-0010.  Pressed back button and audio stopped.  Selected the same podcast and it restarted from the beginning.
+Results: PASSED
+Test End Time: 10/26/2017 13:05 CDT
+Tester: Mark Broihier
+ID:CONTROLS-0010
+Test Start Time: 10/26/2017 13:07 CDT
+Log data:
+Test was executed with the same setup and immediate following the execution of test case FINISH-0020.  Initially I pressed the back key to halt the playing of the current podcast.  Then I selected the same podcast.  A new display appeared that had a progress bar and PAUSE button.  Audio was playing.  I pressed the PAUSE button and the button label became RESUME.  The audio stopped and the progress bar paused.  I then pressed the RESUME button and the audio resumed and the progress bar continued.
+Results: PASSED
+Test End Time: 10/26/2017 13:12 CDT
+Tester: Mark Broihier
+ID:CONTROLS-0020
+Test Start Time: 10/26/2017 13:14 CDT
+Log data:
+This test was executed immediately following CONTROLS-0010 with the same Android phone.  I started by pressing the back button and then continued to step 1.  This time I selected the second podcast, 01 The Moth Radio Hour_Me, Myself, and I_Stories of Questioned Identity.mp3.  That podcast started.  Let the podcast run for a while and then pressed PAUSE.  Pressed RESUME and the audio resumed from the place it was paused.  The progress bar continued.
+Results: PASSED
+Test End Time: 10/26/2017 13:20 CDT
+Tester: Mark Broihier
+ID:CONTROLS-0030
+Test Start Time: 10/26/2017 13:21 CDT
+Log data:
+This test case was executed immediately following the execution of test case CONTROLS-0020.  I started by pressing the back button to terminate the podcast currently playing.  I then started playing the second podcast again.  It started playing from the last pause I did.  I have to think about whether or not this is intended behavior.  I moved the slider forward (about 2/3rd's of the travel distance).  I moved the slider to the beginning of the podcast and heard the introduction monologue.  Let the podcast play to about 1/3.  Went back about 1/2 the distance.  This audio had been played before.  Then I advanced to nearly 1/3 and it was audio later in time but not to where I had stopped.
+Results: PASSED
+Test End Time: 10/26/2017 13:40 CDT
+Tester: Mark Broihier
