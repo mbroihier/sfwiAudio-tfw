@@ -2,3 +2,5 @@ STARTUP-0010
 The application displays a warning message.
 STARTUP-0020
 The main menu will present a list of podcasts.
+STARTUP-0030
+An error message is issued warning the user that no podcasts are available.

@@ -2,3 +2,5 @@ STARTUP-0010:SFWIAUDIO-PR-INIT-010, SFWIAUDIO-PR-INIT-010.001, SFWIAUDIO-PROV-01
 By running the application with no podcasts in the podcast directory, this test case illustrates that the app is stable with no podcasts to play and that it notifies the user that the directory is empty.
 STARTUP-0020:SFWIAUDIO-PR-INIT-010, SFWIAUDIO-PR-INIT-010.002, SFWIAUDIO-PROV-010, SFWIAUDIO-EXT-IF-010, SFWIAUDIO-EXT-IF-020
 When the podcast directory has podcast files, the podcasts will be displayed in a list.
+STARTUP-0030:SFWIAUDIO-PR-INIT-010, SFWIAUDIO-PR-INIT-010.001, SFWIAUDIO-PROV-010
+This test case illustrates that an error message will be displayed when permissions are given to access local files, but there are no files to display.

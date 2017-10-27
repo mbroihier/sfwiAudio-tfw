@@ -2,3 +2,5 @@ STARTUP-0010
 Application is install on an Android phone/hrPodcast directory of the phone is empty
 STARTUP-0020
 App is installed on an Android phone/hrPodcasts are in the podcast directory of the phone
+STARTUP-0030
+Application is installed/hrLocal file access is enabled for the application/hrNo files are in the podcast directory

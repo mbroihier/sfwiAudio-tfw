@@ -51,3 +51,38 @@ This test case was executed immediately following the execution of test case CON
 Results: PASSED
 Test End Time: 10/26/2017 13:40 CDT
 Tester: Mark Broihier
+ID:FINISH-0010
+Test Start Time: 10/27/2017 09:21 CDT
+Log data:
+Using Android 7.1.2 on a Nexus 6P with two podcasts installed, I selected the second podcast named 01 The Moth Radio Hour_Me, Myself, and I_Stories of Questioned Identity.mp3.  I let it run to the end.  When the play finished, it did not return to the main menu.  Note, I have seen it return, so I do know that sometimes it works.
+Results: FAILED
+Test End Time: 10/27/2017 10:17 CDT
+Tester: Mark Broihier
+ID:STARTUP-0010
+Test Start Time: 10/27/2017 10:29 CDT
+Log data:
+Deleted app from Nexus 6P phone running 7.1.2.  Deleted podcasts from phone's directory.  Then I installed the app using Android Studio.  Upon start, it presented the message, "There are no podcasts in the podcast directory or you have not given the app permission to access external storage."  This is correct, but I noticed something that has caused me to write an additional test case, STARTUP-0030.
+Results: PASSED
+Test End Time: 10/27/2017 10:32 CDT
+Tester: Mark Broihier
+ID:STARTUP-0030
+Test Start Time: 10/27/2017 10:41 CDT
+Log data:
+I enabled "storage" permission in Android for the sfwiAudio app.  Then I started the app.  The screen was blank - no message.
+Results: FAILED
+Test End Time: 10/27/2017 10:44 CDT
+Tester: Mark Broihier
+ID:PERFORMANCE-0010
+Test Start Time: 10/27/2017 10:52 CDT
+Log data:
+Started immediately after execution of test case STARTUP-0030.  I pressed the home button and installed 5 podcasts. Started the app from the main Android menu.  The display was blank - the app must not have reread the podcast directory.  This is an error, but not the point of the test case, however I will fail the case so that I will remember to change this behavior.  I halted the app from the task list and started it again.  The 5 podcasts were displayed.  I was able to start each podcast and terminate it by pressing the back key.
+Results: FAILED
+Test End Time: 10/27/2017 11:03 CDT
+Tester: Mark Broihier
+ID:PERFORMANCE-0020
+Test Start Time: 10/27/2017 11:04 CDT
+Log data:
+I started this test case immediately following PERFORMANCE-0010.  I loaded up another 5 podcasts and restarted the app from the main menu.  Again, the list did not refresh so I terminated and restarted the app as I did when I executed PERFORMANCE-0010.  I will not fail this test case for this bad behavior since it is noted in PERFORMANCE-0010 and it is not the objective of this test.  I was able to start all 10 podcasts.  I then loaded another 10.  Again the list didn't update and I terminated and restarted the app.  Then all 20 podcasts were displayed.  I was able to start all 20 podcasts.
+Results: PASSED
+Test End Time: 10/27/2017 11:17 CDT
+Tester: Mark Broihier
