@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+STARTUP-0030</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Application started with file permissions but no podcasts</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>When the app is started by selecting from the Android app selection menu, the app shall do the following:</li><li>If there are no podcasts in the directory, the app shall display a message stating that the device is empty.</li><li>The app shall require no special provisioning however the podcast settings may be required to be adjusted by the Android OS.</li></ul>
+<p>This test case illustrates that an error message will be displayed when permissions are given to access local files, but there are no files to display.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Application is installed</li><li>Local file access is enabled for the application</li><li>No files are in the podcast directory</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Start the application. </li><li> Verify a message is displayed indicating that there are no podcasts in the podcast directory.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+An error message is issued warning the user that no podcasts are available.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li>Unnecessary</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+SFWIAUDIO-PR-INIT-010, SFWIAUDIO-PR-INIT-010.001, SFWIAUDIO-PROV-010</td>
+</tr>
+</table>
+</body>
+</html>
