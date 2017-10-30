@@ -5,7 +5,8 @@ ID:EXPECTED PROGRESS
 10/29/2017 9
 10/30/2017 9
 10/31/2017 9
-11/08/2017 10
+11/04/2017 10
+11/08/2017 11
 ID:STARTUP-0020
 Test Start Time: 10/26/2017 12:50 CDT
 Log data:
@@ -85,4 +86,25 @@ Log data:
 I started this test case immediately following PERFORMANCE-0010.  I loaded up another 5 podcasts and restarted the app from the main menu.  Again, the list did not refresh so I terminated and restarted the app as I did when I executed PERFORMANCE-0010.  I will not fail this test case for this bad behavior since it is noted in PERFORMANCE-0010 and it is not the objective of this test.  I was able to start all 10 podcasts.  I then loaded another 10.  Again the list didn't update and I terminated and restarted the app.  Then all 20 podcasts were displayed.  I was able to start all 20 podcasts.
 Results: PASSED
 Test End Time: 10/27/2017 11:17 CDT
+Tester: Mark Broihier
+ID:PERFORMANCE-0010
+Test Start Time: 10/30/2017 15:06 CDT
+Log data:
+Version 1.3 APK has been developed and published that addresses the problem with rereading the local podcast directory.  Now transitioning into the main menu should reread the directory and display its current contents.  I started this test with contents of 20 podcasts.  These displayed correctly and play seemed reasonable.  Then I deleted them all.  I selected a podcast from the list, the sub menu played nothing and when I returned to the main menu with the back key I got the message, "There are no podcasts in the podcast directory".  This seems reasonable.  Then I loaded 5 podcasts into the podcast directory (step 1 of the procedure).  The display did not change on its own, that wasn't expected.  I pressed the home key and started the app again and got the message that said the directory was empty - it apparently didn't reread it then, but when I selected the podcast and went back to the podcast list, the 5 podcasts appeared and I was able to select each of them.  This is better, I don't have to halt the task, but I'd really like it to display the refreshed list any time I enter the main menu.  I'm going to fail this one again.
+Results: FAILED
+Test End Time: 10/30/2017 15:20 CDT
+Tester: Mark Broihier
+ID:FINISH-0010
+Test Start Time: 10/30/2017 15:21 CDT
+Log data:
+Update 1.3 has a change to terminate the playing of a podcast properly and return to the main menu when the podcast completes.  The cause of this was the use of a stale activity.  I started this test immediately following the execution of PERFORMANCE-0010 when I had 5 podcasts in on the Android 7.1.2 Nexus 6P device.  I loaded a short podcast so that I had 6 podcasts on the device and refreshed the list by starting the play of a podcast and then went back to the main menu.  The added podcast was displayed.  I then started it.  It terminated normally and went back to the main menu list.  I then started the other 5 podcasts and advanced them to near the end and let them complete.  When they completed, they all returned to the main menu.
+Results: PASSED
+Test End Time: 10/30/2017 15:37 CDT
+Tester: Mark Broihier
+ID:STARTUP-0030
+Test Start Time: 10/30/2017 15:37 CDT
+Log data:
+This test was executed with the version 1.3 APK immediately following the execution of test case FINISH-0010.  I exited the app with the back key.  I then deleted the 6 podcasts from the execution of FINISH-001.  I then started the app by selecting from the Android main menu.  I immediately saw the message, "There are no podcasts in the podcast directory"
+Results: PASSED
+Test End Time: 10/30/2017 15:42 CDT
 Tester: Mark Broihier
