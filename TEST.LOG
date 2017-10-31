@@ -108,3 +108,84 @@ This test was executed with the version 1.3 APK immediately following the execut
 Results: PASSED
 Test End Time: 10/30/2017 15:42 CDT
 Tester: Mark Broihier
+ID:STARTUP-0010
+Test Start Time: 10/30/2017 17:39 CDT
+Log data:
+Testing on another device - Moto G running under Android 4.4.2.  Deleted app and then installed APK.  Deleted all podcasts in podcast directory.  Got message, "There are no podcasts in the podcast directory"
+Results: PASSED
+Test End Time: 10/30/2017 17:42 CDT
+Tester: Mark Broihier
+ID:STARTUP-0020
+Test Start Time: 10/30/2017 17:44 CDT
+Log data:
+Ran test on Moto G under Android 4.4.2.  Installed one podcast into podcast directory.  Then started app.  The one podcast is displayed and matches podcast put onto device (01 Chapter I.mp3.
+Results: PASSED
+Test End Time: 10/30/2017 17:47 CDT
+Tester: Mark Broihier
+ID:STARTUP-0030
+Test Start Time: 10/30/2017 17:48 CDT
+Log data:
+Tested on Moto G running Android 4.4.2.  Note that this version of Android does not have in the settings, the ability to restrict local access to files, so the results should be the same as STARTUP-0030.  I started immediately after STARTUP-0020 execution so the first thing I did was delete the file added in that test case.  Used back button to leave app and then started it again.  The display said, "There are no podcasts in the podcast directory"
+Results: PASSED
+Test End Time: 10/30/2017 17:51 CDT
+Tester: Mark Broihier
+ID:SELECT-0010
+Test Start Time: 10/30/2017 17:52 CDT
+Log data:
+Tested on a Moto G with Android 4.4.2.  Put one podcast into the podcast directory and started app.  Saw "01 Chapter I.mp3" podcast.  Selected it.  A sub menu was displayed with a pause button and a progress bar.  The playing podcast matches the podcast installed and displayed.  The progress bar advanced as I let it play.
+Results: PASSED
+Test End Time: 10/30/2017 17:56 CDT
+Tester: Mark Broihier
+ID:FINISH-0010
+Test Start Time: 10/31/2017 10:35 CDT
+Log data:
+Using state of Moto G from test case SELECT-0010 (10/30/2017), I started the app and started the 01 Chapter I.mp3 podcast.  I listened to the entire podcast without touching the screen.  At the end of the play, the main menu was presented.
+Results: PASSED
+Test End Time: 10/31/2017 11:29 CDT
+Tester: Mark Broihier
+ID:FINISH-0020
+Test Start Time: 10/31/2017 11:30 CDT
+Log data:
+Immediately continuing from test case FINISH-0010 with the Moto G, I selected the podcast, it started from the beginning.  I pressed the back button and it went back to the main menu.  Then I selected the same podcast again and it started from the beginning.
+Results: PASSED
+Test End Time: 10/31/2017 11:32 CDT
+Tester: Mark Broihier
+ID:CONTROLS-0010
+Test Start Time: 10/31/2017 13:42 CDT
+Log data:
+This test case was executed following FINISH-0020 using the Mot G phone.  I selected a podcast, it started playing and the progress bar advanced.  I pressed the pause button.  The button changed to resume, audio ceased, and the progress bar remained stationary.  I pressed resume, the button label changed to pause and the audio resumed.  The progress bar continued.
+Results: PASSED
+Test End Time: 10/31/2017 13:50 CDT
+Tester: Mark Broihier
+ID:CONTROLS-0020
+Test Start Time: 10/31/2017 13:52 CDT
+Log data:
+This test case was executed immediately following CONTROLS-0010 (10/31/2017).  I started by pressing the back button and I then selected the same podcast.  Execution resumed where I had last pressed the pause button.  This was expected.  I let the podcast play for a while.  I then pressed pause.  The audio paused, the button changed to resume, and the progress bar stopped moving.  I pressed resume and the audio resumed where it had left off.  The progress bar progressed.
+Results: PASSED
+Test End Time: 10/31/2017 13:58 CDT
+Tester: Mark Broihier
+ID:CONTROLS-0030
+Test Start Time: 10/31/2017 13:59 CDT
+Log data:
+This test was executed immediately following the execution of CONTROLS-0020 using the Moto G phone.  Starting from the playing podcast.  I moved the slider to the beginning of the slider and toggled the pause resume button.  Then I pressed the back button and then I pressed the home key.  From the main menu, I started the test case at step 1.  The main menu was presented and I selected the podcast.  It started playing the podcast at the beginning (where I had moved the progress bar and toggled the pause/resume button).  I moved the slider forward.  The audio does seem to advance.  Then I moved the slider back to the beginning.  The introduction of the podcast started playing.  I let the podcast play until about 1/4 of it played (based on the slider bar).  I moved it to about 1/8th the travel and verified I had heard this audio.  Then I advanced the bar just a bit.  The audio that played was after the audio I was just listening to but before the audio I was listening to at about the 1/4 position.  The slider seems to be working as intuitively expected.
+Results: PASSED
+Test End Time: 10/31/2017 14:19 CDT
+Tester: Mark Broihier
+ID:PERFORMANCE-0010
+Test Start Time: 10/31/2017 14:20 CDT
+Log data:
+This test was executed following CONTROLS-0030 (10/31/2017).  Before this test, I exited the app.  Then I executed step 1 which was loading 5 podcasts.  I then started the app.  Only one podcast was displayed - the one I had been playing previously.  I selected it, it started playing and then I hit the back button.  At that point, all 5 of the podcasts were listed.  I was able to select all 5 podcasts and they all played and terminated as expected when I hit the back button.
+
+Again, due to the wrong initial display after loading new podcasts, I'm failing this test case.
+Results: FAILED
+Test End Time: 10/31/2017 14:28 CDT
+Tester: Mark Broihier
+ID:PERFORMANCE-0020
+Test Start Time: 10/31/2017 14:29 CDT
+Log data:
+I started this test case immediately following PERMFORMANCE-0020 on the Moto G running Android 4.4.2.  Like last time, I exited the app and then installed 5 more podcasts so that it held 10 podcasts.  When I started, I had 10 podcasts displayed which surprised me a bit - I had expected 5 because I hadn't expected the list to have been updated (like last time with PERFORMANCE-0010).  10 is correct value, so that is good, but...  I was able to select all 10 podcasts and the back key terminated them when pressed.  I then added 10 more podcasts.  I exited the app using the back key twice.  I did this while the podcasts were loading. When the loading finished, I started the app.  There were 20 podcasts displayed.  I could start all of them and terminate them with the back key.
+
+This test case executed completely as expected.  At the moment, I'm not sure why PERFORMANCE-0010 has failed consistently.  I need to investigate why the list isn't always updating after using Android File Transfer to load the files.
+Results: PASSED
+Test End Time: 10/31/2017 14:45 CDT
+Tester: Mark Broihier

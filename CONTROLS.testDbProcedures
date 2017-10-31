@@ -1,5 +1,5 @@
 CONTROLS-0010
-/step From the main menu, select a podcast.\step /step Confirm a new display appears with a progress bar and a pause button.\step /step Confirm the audio is playing.\step /step Press the pause button.\step /step Verify the audio stops and the progress bar pauses.\step /step Verify that the button label changes to resume.\step /step Press the resume button.\step /step Verify that the audio resumes and the progress bar show audio progress.\step 
+/step From the main menu, select a podcast.\step /step Confirm a new display appears with a progress bar and a pause button.\step /step Confirm the audio is playing.\step /step Press the pause button.\step /step Verify the audio stops and the progress bar pauses.\step /step Verify that the button label changes to resume.\step /step Press the resume button.\step /step Verify that the audio resumes and the progress bar shows audio progress.\step 
 CONTROLS-0020
 /step From the main menu of the app, select a podcast.\step /step Confirm the audio begins to play.\step /step Press the pause button.\step /step Confirm the audio stops and the progress bar is stationary.\step /step Press the resume button.\step /step Verify the audio resumes.\step /step Verify that the audio is playing from the position it was paused at.\step /step Verify that the progress bar is moving.\step 
 CONTROLS-0030
