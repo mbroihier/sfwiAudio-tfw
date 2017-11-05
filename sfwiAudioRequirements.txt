@@ -11,7 +11,7 @@ Automated Testing Framework Example
 
 
 Mark Broihier
-February 06, 2017
+November 05, 2017
 
 
 
@@ -58,7 +58,6 @@ The audio will be allowed to be played in background and with the display off lo
 
 If the user presses the back key, however, the podcast replay will be terminated and the list of podcasts in the directory will again be presented.
 
-When the play terminates, the display will return to the podcast list.
 
  3.2  External Interface Requirements
 ID::SFWIAUDIO-EXT-IF-010 sfwiAudio shall display and play only podcasts that are in the podcast directory.
@@ -81,7 +80,7 @@ ID::SFWIAUDIO-PR-INIT-010.002 If podcasts do exist in the directory, the app sha
 ID::SFWIAUDIO-PR-SELECT-010 When a podcast is selected by pressing a list entry, a new menu will be displayed presenting a pause button and slider, and the podcast will begin playing.
 
  3.3.3  Podcast Finishes
-ID::SFWIAUDIO-PR-FINISHED-010 When the podcast completes, the menu will revert to the main/initial menu.
+ID::SFWIAUDIO-PR-FINISHED-015 When the podcast completes, the menu button and slider will no longer affect podcast play. 
 
 ID::SFWIAUDIO-PR-FINISHED-020 A podcast shall be “completed” if the user presses the “back” navigation control returning to the main menu.
  3.3.4  Podcast Play Menu/Controls

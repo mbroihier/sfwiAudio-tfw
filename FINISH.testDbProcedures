@@ -2,3 +2,5 @@ FINISH-0010
 /step From the main menu, select a podcast.\step /step Let the podcast play to completion.\step /step Verify the play menu is exited and the app returns to the main (selection) menu.\step 
 FINISH-0020
 /step From the main menu, select a podcast.\step /step Confirm the podcast begins playing and the play menu is displayed.\step /step Press the back button.\step /step Verify the audio play stops.\step /step Select the same podcast.\step /step Verify that the podcast restarts play at the beginning of the audio.\step 
+FINISH-0030
+/step From the main menu, select a podcast.\step /step Let the podcast play to completion.\step /step Verify the slider bar is all the way to the right.\step /step Verify the button does not pause or resume play.\step /step Verify that the slider does not induce any sort of play action.\step /step Press the back key/button.\step /step Verify the play menu exits and the play list is presented.\step 

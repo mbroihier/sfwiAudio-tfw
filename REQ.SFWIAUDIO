@@ -12,8 +12,8 @@ SFWIAUDIO-PR-INIT-010.002
 If podcasts do exist in the directory, the app shall display a list of the podcasts that can be played.
 SFWIAUDIO-PR-SELECT-010
 When a podcast is selected by pressing a list entry, a new menu will be displayed presenting a pause button and slider, and the podcast will begin playing.
-SFWIAUDIO-PR-FINISHED-010
-When the podcast completes, the menu will revert to the main/initial menu.
+SFWIAUDIO-PR-FINISHED-015
+When the podcast completes, the menu button and slider will no longer affect podcast play. 
 SFWIAUDIO-PR-FINISHED-020
 A podcast shall be “completed” if the user presses the “back” navigation control returning to the main menu.
 SFWIAUDIO-PR-PAUSE-010

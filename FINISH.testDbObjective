@@ -2,3 +2,5 @@ FINISH-0010:SFWIAUDIO-PR-FINISHED-010
 Letting the podcast play to completion should cause the app to revert to the initial display menu.
 FINISH-0020:SFWIAUDIO-PR-FINISHED-020
 This test case demonstrates that while playing a podcast, if a user presses the back, the podcast is terminated and it will be treated as though the podcast has completed.
+FINISH-0030:SFWIAUDIO-PR-FINISHED-015
+Letting the podcast play to completion should cause the app to revert to the initial display menu.

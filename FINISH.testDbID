@@ -1,4 +1,6 @@
 FINISH-0010
-When a podcast completes, the main menu is presented
+When a podcast completes, the main menu is presented - This test case is obsolete - requirement SFWIAUDIO-PR-FINISHED-010 has been removed.
 FINISH-0020
 Pressing back while podcast is playing, terminates play
+FINISH-0030
+When a podcast completes, the play menu becomes dormant

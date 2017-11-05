@@ -57,6 +57,8 @@ class Requirements:
 
     # add a list of requirements to the database
     def updateRequirements(self,requirementList):
+        if isinstance(requirementList, basestring):
+            return
         for r in requirementList:
             if not r in self.requirements:
                 self.addRequirement(r)
