@@ -189,3 +189,52 @@ This test case executed completely as expected.  At the moment, I'm not sure why
 Results: PASSED
 Test End Time: 10/31/2017 14:45 CDT
 Tester: Mark Broihier
+ID:PERFORMANCE-0030
+Test Start Time: 11/6/2017 17:02 CST
+Log data:
+Loaded version 1.4 APK on Moto G phone.  Had 4 podcasts in the podcast directory.  Started the app. List showed 4 podcasts to play.  Selected the last podcast in the list.  It started playing and a play menu was displayed.  I pressed the home key and control returned to the main menu.  I entered the app again, the play menu was presented to me.  I pressed the up button and play stopped and the podcast list was presented to me.  I selected the podcast that had been playing and it resumed playing the podcast.  I pressed the power button, the screen went blank, but the play continued.  I logged in and the play menu was presented.  I pressed pause and then resume - it acted normally.  I slid the slider - it moved the location of where the podcast was playing.  The app didn't crash so it appears the problem was corrected.
+Results: PASSED
+Test End Time: 11/6/2017 17:10 CST
+Tester: Mark Broihier
+ID:CONTROLS-0010
+Test Start Time: 11/6/2017 17:18 CST
+Log data:
+This test was with the version 1.4 APK and was run on a Moto G with Android 4.4.2.  The app had been loaded and started prior to executing step 1 of the procedure.  I selected the second podcast in the list and was presented with a play menu.  The audio began playing.  I pressed the pause button and the button changed to resume.  The slider paused.  I pressed resume and the button changed to pause and the slider progressed.
+Results: PASSED
+Test End Time: 11/6/2017 17:24 CST
+Tester: Mark Broihier
+ID:CONTROLS-0020
+Test Start Time: 11/6/2017 17:24 CST
+Log data:
+This test was executed with the version 1.4 APK on a Moto G running Android 4.4.2.  The test continued from CONTROLS-0010.  I pressed the back key and then executed step 1 of the procedure.  I selected the third podcast of 4 that were presented on the main menu.  It started playing.  I pressed pause, the audio stopped and then resume and the audio resumed from where I had paused.  The slider bar showed progression when audio played.
+Results: PASSED
+Test End Time: 11/6/2017 17:29 CST
+Tester: Mark Broihier
+ID:CONTROLS-0030
+Test Start Time: 11/6/2017 17:30 CST
+Log data:
+This test was executed immediately following the execution of CONTROLS-0020 using the Moto G with Android 4.4.2 with the version 1.4 APK.  I deviated from the procedure by immediately moving the slider bar to various locations and checking that the audio seemed to be consistent with what I expected.  I slid the slider to the beginning and to the end and heard audio consistent with those positions.  I did this several time.  All seemed well.
+Results: PASSED
+Test End Time: 11/6/2017 17:37 CST
+Tester: Mark Broihier
+ID:STARTUP-0010
+Test Start Time: 11/6/2017 17:38 CST
+Log data:
+This test case was executed with the version 1.4 APK on a Moto G running Android 4.4.2.  I first of all removed all podcasts from the podcast directory.  This version of Android does not have a permission switch that has to be set by the user after installation.  I started the app and got the message "There are no podcasts in the podcast directory".
+Results: PASSED
+Test End Time: 11/6/2017 17:41 CST
+Tester: Mark Broihier
+ID:STARTUP-0020
+Test Start Time: 11/6/2017 17:45 CST
+Log data:
+This test was executed with the version 1.4 APK running on a Moto G with Android 4.4.2.  I terminated the application I had been running in STARTUP-0010 and loaded three podcasts: 01 #1744_Plane Talk.mp3, 01 #513_129 Cars.mp3, and 01 On Your Mark, Get Set, Go.mp3. I started the app.  The three podcasts were presented and matched (note that they were in a different order than Android File Transfer said they were in).
+Results: PASSED
+Test End Time: 11/6/2017 17:50 CST
+Tester: Mark Broihier
+ID:SELECT-0010
+Test Start Time: 11/6/2017 17:51 CST
+Log data:
+This test was execute with the version 1.4 APK immediately following the execution of test case STARTUP-0020 on the same Moto G.  I selected the second podcast, and confirmed it started playing. 
+Results: PASSED
+Test End Time: 11/6/2017 17:53 CST
+Tester: Mark Broihier
