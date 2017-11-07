@@ -238,3 +238,87 @@ This test was execute with the version 1.4 APK immediately following the executi
 Results: PASSED
 Test End Time: 11/6/2017 17:53 CST
 Tester: Mark Broihier
+ID:STARTUP-0010
+Test Start Time: 11/7/2017 10:34 CST
+Log data:
+This test case was tested with version 1.4 APK running on Nexus 6P under Android 7.2.1.  I emptied the podcast directory and set access to "storage" (under app settings in Android setup) to "no".  I then did step 1, start the app.  I got the message, "There are no podcasts in the podcast directory or you have not given the app permission to access external storage".
+Results: PASSED
+Test End Time: 11/7/2017 10:38 CST
+Tester: Mark Broihier
+ID:STARTUP-0030
+Test Start Time: 11/7/2017 10:39 CST
+Log data:
+Immediately after executing test case STARTUP-0010 with version 1.4 on the Nexus device, I changed the setting for "storage" to "yes"/"on".  I then halted the app and restarted. I got the message, "There are no podcasts in the podcast directory".
+Results: PASSED
+Test End Time: 11/7/2017 10:41 CST
+Tester: Mark Broihier
+ID:STARTUP-0020
+Test Start Time: 11/7/2017 10:42 CST
+Log data:
+Immediately following the execution of test case STARTUP-0030, I ran this one.  I put 7 podcasts in the directory and then stopped the app.  I then started it and was presented with seven podcasts matching the ones I loaded into the phone using Android File Transfer.
+Results: PASSED
+Test End Time: 11/7/2017 10:45 CST
+Tester: Mark Broihier
+ID:SELECT-0010
+Test Start Time: 11/7/2017 10:52 CST
+Log data:
+This test was executed with the version 1.4 APK on a Nexus 6P running Android 7.2.1.  It was executed following test case STARTUP-0020 so there were 7 podcasts installed. I selected the first podcast 02 Chapter II.mp3.  The play page displayed a progress bar and a pause button and the audio played.  The audio matched the title.
+Results: PASSED
+Test End Time: 11/7/2017 10:56 CST
+Tester: Mark Broihier
+ID:FINISH-0030
+Test Start Time: 11/7/2017 10:57 CST
+Log data:
+This test case was run with the version 1.4 APK on a Nexus 6P running 7.2.1.  I continued this from SELECT-0010.  I just let the podcast selected in that test play to the end. When it completed, I played with the pause/replay button and progress/slider bar.  They had no affect on playing of audio.  Oddly, there was something very faint coming through the ear buds.  I'm not sure where it came from.  I hit the back key and control was sent back to the main menu.
+Results: PASSED
+Test End Time: 11/7/2017 11:44 CST
+Tester: Mark Broihier
+ID:FINISH-0020
+Test Start Time: 11/7/2017 11:50 CST
+Log data:
+This test case was run with the version 1.4 APK on a Nexus 6P running 7.2.1 Android.  Continuing from FINISH-0010, I selected a podcast to play.  I let it play for a while and then pressed the back key.  Control went to the main menu and audio stopped.  I selected the same podcast and it resumed from roughly where it had left off.
+Results: PASSED
+Test End Time: 11/7/2017 11:54 CST
+Tester: Mark Broihier
+ID:CONTROLS-0010
+Test Start Time: 11/7/2017 13:22 CST
+Log data:
+This test case was executed with version 1.4 on a Nexus 6P running 7.2.1.  The test continued from FINISH-0020.  Selected a podcast from the main menu.  The play menu appeared with a progress bar and pause button.  The audio is playing.  I pressed the pause button, the button label changed to resume and the audio stopped.  The progress bar paused.  I pressed the resume.  The button label changed to pause.  The progress bar continued.  The audio began playing again.
+Results: PASSED
+Test End Time: 11/7/2017 13:28 CST
+Tester: Mark Broihier
+ID:CONTROLS-0020
+Test Start Time: 11/7/2017 13:28 CST
+Log data:
+I continued this test case immediately following CONTROLS-0010.  I pressed pause and resume and the audio proceeded from where it had stopped.  I pressed it again and watched the progress bar to assure it wasn't moving while the audio was off.  It didn't.  I pressed resume and watched the progress bar.  It did progress.
+Results: PASSED
+Test End Time: 11/7/2017 13:35 CST
+Tester: Mark Broihier
+ID:CONTROLS-0030
+Test Start Time: 11/7/2017 13:35 CST
+Log data:
+This test case was executed immediately after CONTROLS-0020 using the version 1.4 APK on a Nexus 6P.  I started playing a podcast, moved the slider around, listened to what played and felt it was consistent.  I moved the slider to the beginning and noted it played from the intro of the show.  I then let it play until 1/3 of it had played.  I moved the slider back to about the 1/6 position.  The audio was previously heard and seemed consistent with where I had moved the slider.  I then slid the slider to just before 1/3.  What played was just prior to the 1/3 position.  This all seems reasonable.
+Results: PASSED
+Test End Time: 11/7/2017 13:56 CST
+Tester: Mark Broihier
+ID:PERFORMANCE-0010
+Test Start Time: 11/7/2017 14:08 CST
+Log data:
+This test case was executed with version 1.4 of the app on a Nexus 6P phone running Android 7.2.1.  I load 5 fresh podcasts and started the app.  It showed the old list of podcasts as previously noted and I will fail this case for that reason again.  After selecting an old title, I went back to the main screen and it was refreshed with the titles I had just loaded.  There were five of them.
+Results: FAILED
+Test End Time: 11/7/2017 14:12 CST
+Tester: Mark Broihier
+ID:PERFORMANCE-0020
+Test Start Time: 11/7/2017 14:12 CST
+Log data:
+Starting immediately from PERFORMANCE-0010, I loaded 5 more podcasts.  When I started the app, there were 10 podcasts.  I could select them all and what played was what I selected.  I then load 10 more.  I started the app and there were 20 podcasts available.  I could select and play all podcasts.  What I selected was what played.
+Results: PASSED
+Test End Time: 11/7/2017 14:21 CST
+Tester: Mark Broihier
+ID:PERFORMANCE-0030
+Test Start Time: 11/7/2017 14:22 CST
+Log data:
+This test case was run with version 1.4 on a Nexus 6P running Android 7.2.1.  I selected a podcast from the list.  I pressed the home key.  The podcast continued but the device went to its home menu.  I went back into the app.  It was in the play menu.  I then pressed the up button.  The audio stopped and control went to the podcast list menu.  I reselected the podcast that was playing and it continued from near where it left off.  I pressed the power button and the screen went blank but the audio continued.  I logged back in.  Logging back in took me back to the play menu.  Pause and resume worked.  The slider worked as intended.
+Results: PASSED
+Test End Time: 11/7/2017 14:28 CST
+Tester: Mark Broihier

@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+PERFORMANCE-0030</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+App crashes after pressing power button</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>requirement ID missing from requirements</li></ul>
+<p>This test is intended to illustrate that the app no longer crashes after pressing the power button and reentering the app.  The only requirement being tested here is the implied requirement that the app shouldn't crash.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>App is installed and podcasts are installed into the podcast directory.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Start the app. </li><li> Select a podcast. </li><li> Verify that the podcast starts playing. </li><li> Press the home key. </li><li> Verify control is returned to Android's main menu. </li><li> Enter the app. </li><li> Verify that the play menu is presented. </li><li> Press the up button. </li><li> Verify control is returned to the podcast list menu and the audio stops. </li><li> Select the podcast that was previously playing. </li><li> Verify the play menu is presented and the podcast resumes playing. </li><li> Press the power button. </li><li> Verify that the screen blanks. </li><li> Verify that the podcast continues playing. </li><li> Log back into the device and select the app. </li><li> Verify the play menu is presented and the pause/resume button works and the slider works.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+The app will no longer crash and will act normally after entering the app again after the power button or home key is pressed.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+None</td>
+</tr>
+</table>
+</body>
+</html>
